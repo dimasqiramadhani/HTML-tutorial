@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dimasqi Ramadhani" />
+    <meta name="description" content="Learn HTML Path Tutorial" />
+    <meta name="keywords" content="HTML, CSS, Javascript" />
+    <meta http-equiv="refresh" content="30" />
+    <title>Tutorial | Path HTML</title>
+  </head>
+  <body>
+    <!-- 
+            A file path describes the location of a file in a web site's folder structure.                
+                1. <img src="picture.jpg"> the "picture.jpg" file is located in 
+                   the same folder as the current page.
+                2. <img src="images/picture.jpg"> the "picture.jpg" file is 
+                   located in the images folder in the current folder.
+                3. <img src="/images/picture.jpg"> the "picture.jpg" file is 
+                   located in the images folder at the root of the current web.
+                4. <img src="../picture.jpg"> the "picture.jpg" file is located 
+                   in the folder one level up from the current folder.
+        -->
+    <p>an absolute file path is the full URL to a file</p>
+    <img
+      src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
+      alt="tree, sunset, clouds image" />
+
+    <p>
+      using a relative file path, in the following example, the file path points
+      to a file in the images folder located at the root of the current web
+    </p>
+    <img src="Assets/Images/picture-1.jpg" alt="the joker" />
+
+    <p>
+      in the following example, the file path points to a file in the images
+      folder located in the current folder:
+    </p>
+    <img src="Assets/Images/picture-2.jpg" alt="lake and mountain" />
+
+    <p>
+      in the following example, the file path points to a file in the images
+      folder located in the folder one level up from the current folder:
+    </p>
+    <img src="Assets/Images/picture-3.jpg" alt="cold mountain" />
+  </body>
+</html>

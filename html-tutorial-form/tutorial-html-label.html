@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Dimasqi Ramadhani">
+        <meta name="description" content="Learn HTML Label Form Tutorial">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta http-equiv="refresh" content="30">
+        <title>Tutorial | Label Form HTML</title>
+    </head>
+    <body>
+        <form name="label-form" action="dummy-receive.html" enctype="application/x-www-form-urlencoded" method="get" target="_blank">
+            <!-- 
+                <label> element defines a label for many form elements.
+
+                The label element is useful for screen-reader users, because the screen-readers will read out loud the label when the user focuses on the input element.
+
+                The label element also helps users who have dificulty clicking on very small regions (such as radio buttons, checkboxes) - because when the user clicks the text within the label element, it toggles the radio button/checkbox.
+
+                The for attribute in label should be equal to the id attribute in input element.
+            -->
+            <label for="username">
+                username : <br> <input type="text" id="username" name="username">
+            </label> <br>
+            <label for="email">
+                email : <br> <input type="text" id="email" name="email">
+            </label> <br>
+            <label for="telephone">
+                telephone : <br> <input type="text" id="telephone" name="telephone">
+            </label>
+        </form>
+    </body>
+</html>

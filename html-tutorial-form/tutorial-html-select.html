@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Dimasqi Ramadhani">
+        <meta name="description" content="Learn HTML Select Form Tutorial">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta http-equiv="refresh" content="30">
+        <title>Tutorial | Select Form HTML</title>
+    </head>
+    <body>
+        <form name="select-form" action="dummy-receive.html" enctype="application/x-www-form-urlencoded" method="get" target="_self">
+            <label for="hobby">hobby :</label>
+            <select name="hobby" id="hobby" multiple>
+                <option value="coding" selected>coding</option>
+                <option value="dancing">dancing</option>
+                <option value="eating">eating</option>
+                <option value="sleeping">sleeping</option>
+                <option value="gaming">gaming</option>
+            </select> <br><br>
+
+            <button type="submit">submit</button>
+        </form>
+
+        <br><br>
+        
+        <!-- option group -->
+        <form name="option-group-form" action="dummy-receive.html" enctype="application/x-www-form-urlencoded" method="get" target="_self">
+            <label for="hobby">hobby :</label>
+            <select name="hobby" id="hobby" multiple>
+                <optgroup label="coding">
+                    <option value="html">html</option>
+                    <option value="css">css</option>
+                    <option value="javascript">javascript</option>
+                </optgroup>
+                <optgroup label="sport">
+                    <option value="swimming">swimming</option>
+                    <option value="dancing">dancing</option>
+                    <option value="chess">chess</option>
+                </optgroup>
+                <optgroup label="eating">
+                    <option value="seblak">seblak</option>
+                    <option value="bakso">bakso</option>
+                    <option value="telor">telor</option>
+                </optgroup>
+            </select> <br><br>
+
+            <button type="submit">submit</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Dimasqi Ramadhani">
+        <meta name="description" content="Learn HTML Time Form Tutorial">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta http-equiv="refresh" content="30">
+        <title>Tutorial | Time Form HTML</title>
+    </head>
+    <body>
+        <!-- 
+            <input type="time"> allows the user to select a time (no time zone).
+
+            Depending on browser support, a time picker can show up in the input field.
+        -->
+        <form name="time-form" action="dummy-receive.html" enctype="application/x-www-form-urlencoded" method="get" target="_self">
+            <label for="timein">
+                jam masuk : <br> <input type="time" name="time" id="timein" value="07:00">
+            </label> <br>
+            <label for="timeout">
+                jam keluar : <br> <input type="time" name="time" id="timeout" value="16:00"> 
+            </label> <br><br>
+
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>

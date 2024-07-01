@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Dimasqi Ramadhani">
+        <meta name="description" content="Learn HTML Javascript Tutorial">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta http-equiv="refresh" content="30">
+        <title>Tutorial | Javascript HTML</title> 
+    </head>
+    <body>
+        <!-- 
+            The html <script> element is used to define a client-side script (javascript). the <script> element either contains script statements, or it points to an external script file through the src attribute. common uses for javascript are image manipulation, form validation, and dynamic changes of content. to select an html element, javascript most often uses the document.getElementById() method.
+        -->
+        <h1>use javascript to change text</h1>
+        <p>
+            this example writes "Hello Javascript!" into an html element with id="demo":
+        </p>
+        <p id="demo">dimasqiramadhani</p>
+
+        <script>
+            document.getElementById("demo").innerHTML = "Hello Javascript!";
+        </script>
+
+        <!-- Javascript can change the content of the an html element -->
+        <h1>my first javascript</h1>
+        <p id="firstscript">this is my first script</p>
+        <button type="button" onclick="myFunction()">click me!</button>
+
+        <script>
+            function myFunction() {
+                document.getElementById("firstscript").innerHTML = "Hello Javascript!";
+            }
+        </script>
+
+        <!-- Javascript can change the style of an html element -->
+        <p id="secondscript">
+            my name is dimasqiramadhani
+        </p>
+
+        <button type="button" onclick="mySecondFunction()">click me!</button>
+
+        <script>
+            function mySecondFunction() {
+                document.getElementById("secondscript").style.fontSize = "25px";
+                document.getElementById("secondscript").style.color = "white";
+                document.getElementById("secondscript").style.backgroundColor = "black";
+                document.getElementById("secondscript").style.padding = "15px 15px";
+                document.getElementById("secondscript").style.fontWeight = "Bold";     
+            }
+        </script>
+
+        <!-- 
+            The html <noscript> element defines an alternate content to be displayed to users that have disabled the scripts in their browser or have a browser that does't support scripts:
+
+            A browser without support for Javascript will show the text written inside the <noscript> element.
+        -->
+        <p id="thirdscript"></p>
+
+        <script>
+            document.getElementById("thirdscript").innerHTML = "Hello dimasqiramadhani"
+        </script>
+
+        <noscript>
+            Sorry, your browser does not support Javascript!
+        </noscript>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Dimasqi Ramadhani">
+        <meta name="description" content="Learn HTML Datalist Form Tutorial">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta http-equiv="refresh" content="30">
+        <title>Tutorial | Datalist Form HTML</title>
+    </head>
+    <body>
+        <!-- 
+            <datalist> element specifies a list of pre-defined options for an input element.
+
+            Users will see a drop-down list of the pre-defined options as they input data.
+
+            The list attribute of the input element, must refer to the id attribute of the datalist element.
+        -->
+        <form name="datalist-form" action="dummy-receive.html" enctype="application/x-www-form-urlencoded" method="get" target="_self">
+            <label for="hobby">
+                hobby : <input type="text" name="hobby" id="hobby" list="hobbies">
+            </label>
+
+            <datalist id="hobbies">
+                <option value="coding">coding</option>
+                <option value="gaming">gaming</option>
+                <option value="running">running</option>
+            </datalist>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-widthm initial-scale=1.0">
+        <meta name="author" content="Dimasqi Ramadhani">
+        <meta name="description" content="Learn HTML Semantic Tutorial">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta http-equiv="refresh" content="30">
+        <title>Tutorial | Semantic HTML</title>
+    </head>
+    <style>
+        #section-container {
+            padding: 10px;
+            background-color: #a7a6a6;
+        }
+
+        section {
+            background-color: rgb(248, 248, 248);
+            padding: 10px 15px;
+            margin: 7px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        aside {
+            background-color: #a7a6a6;
+            float: right;
+            width: 30%;
+            margin: 15px;
+            padding: 15px;
+        }
+    </style>
+    <body>
+        <!-- 
+            Semantic element clearly describes its meaning to both the browser and the developer. 
+            
+            Examples of non-semantic elements <div> and <span> - tells nothing about its content. 
+                
+            Examples of semantic elements : <form>. <table>, and <article> - clearly defines its content.
+        -->
+
+        <!-- 
+            <section> element defines a section in a document. 
+
+            According to W3C's html documentation: "a section is a thematic grouping of content, typically with a heading."
+
+            Examples of where a section element can be used:
+                1. chapter    
+                2. introduction
+                3. news items
+                4. contact information
+        -->
+        <section id="section-container">
+            <section>
+                <h1>WWF</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto possimus, perferendis quia libero facere cupiditate ullam odit, fuga earum enim vel ducimus, ex vero eius in accusamus. Minus, modi obcaecati?</p>
+            </section>
+
+            <section>
+                <h1>WWF's panda symbol</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas voluptatibus deserunt quaerat. Tenetur, cumque suscipit hic a assumenda impedit odio dolor beatae corrupti deserunt laborum et! Recusandae placeat eligendi porro.</p>
+            </section>
+        </section>
+
+        <!-- 
+            Article element specifies independent, self-contained content.
+
+            An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site.
+
+            Example of where the article element can be used:
+                1. Rorum post
+                2. Blog post
+                3. User comments
+                4. Product cards
+                5. Newspaper articles
+        -->
+        <article>
+            <article>
+                <h2>Google Chrome</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat expedita delectus minus assumenda, ipsa explicabo adipisci quisquam ratione tempore impedit perferendis beatae aliquid doloribus aliquam perspiciatis commodi id quae blanditiis.</p>
+            </article>
+
+            <article>
+                <h2>Mozilla Firefox</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae repudiandae tempore deserunt laborum obcaecati. Eos quaerat repellendus minima sit, minus excepturi recusandae, quisquam vero, quo corporis amet deserunt voluptatibus nihil!</p>
+            </article>
+
+            <article>
+                <h2>Microsoft Edge</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem dignissimos culpa laudantium nemo sapiente. Molestias, a pariatur. Inventore aliquam ducimus quae? Est, ducimus consequatur. Suscipit qui obcaecati adipisci minima soluta.</p>
+            </article>
+        </article>
+
+        <!--    
+            <header> element is represent a container for introductory content or a set of navigational links
+            
+            A header element typically contains:
+                1. One or more heading elements (<h1> - <h2>)
+                2. Logo or icon
+                3. Authorship information
+        -->
+        <article>
+            <header>
+                <h1>what does WWF do?</h1>
+                <p>WWF's mission:</p>
+            </header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum minima nihil cum enim quidem deleniti quis debitis eligendi nostrum tenetur in, facilis consequatur atque culpa, autem quibusdam, iste aliquid distinctio.</p>
+        </article>
+
+        <!-- 
+            <footer> element defines a footer for a document or section.
+
+            A footer element typically contains:
+                1. Authorship information
+                2. Copyright information
+                3. Contact information
+                4. Sitemap
+                5. Back to top links
+                6. Related documents
+        -->
+        <footer>
+            <p>author: hege refnes</p>
+            <p><a href="mailto:dimasqiramadhani@gmail.com">dimasqiramadhani@gmail.com</a></p>
+        </footer>
+
+        <!-- 
+            <nav> element define a set of navigation links.
+
+            Notice that not all links of a document should be inside a nav element. the nav element is intended only for major blocks of navigation links.
+        -->
+       <nav>
+        <a href="#">html</a> 
+        <a href="#">css</a>
+        <a href="#">javascript</a> 
+       </nav> 
+
+       <!--
+            <aside> element defines some content aside from the content it is placed in.
+
+            The aside content should be indirectly related to the surrounding content.
+       -->
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit provident dolor beatae. Eligendi exercitationem qui blanditiis, aut aliquam accusantium dolores ut repudiandae, consequuntur incidunt sit alias necessitatibus soluta porro quisquam.</p>
+
+       <aside>
+            <h4>Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iste animi aut veniam minima facilis dignissimos, est iusto provident alias qui earum quia ut natus ea, reiciendis voluptas ducimus doloremque!</p>
+            <span class="clear"></span>
+        </aside>
+
+        <!-- 
+            <figure> element specifies self-contained content, like illustration, diagrams, photos, code listings, etc.
+
+            The figcaption define a caption for the figure element. the figcaption element can be placed as the first or as the last child of a figure.
+        -->
+
+        <figure>
+            <img src="html-image/tutorial-10-image-1.png" alt="logo" style="width: 50px; height: auto;">
+            <figcaption>logo image</figcaption>
+        </figure>
+    </body>
+</html>

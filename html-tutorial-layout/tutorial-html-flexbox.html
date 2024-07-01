@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Dimasqi Ramadhani">
+        <meta name="description" content="Learn HTML Layout Flexbox Tutorial">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta http-equiv="refresh" content="30">
+        <title>Tutorial | Layout Flexbox HTML</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            /* style for header */
+            header {
+                background-color: #666;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+
+            /* container for flexbox */
+            section {
+                display: flex;
+            }
+
+            /* style for navigation menu */
+            nav {
+                flex: 1;
+                background-color: #ccc;
+                padding: 20px;
+            }
+
+            /* style the list inside the menu  */
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            nav ul li a {
+                margin: 0 0 20px 0;
+                display: block;
+                color: black;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            nav ul li a:hover {
+                color: maroon;
+            }
+
+            /* style for article menu */
+            article {
+                flex: 3;
+                background-color: #999;
+                padding: 20px;
+            }
+
+            /* style for footer menu */
+            footer {
+                background-color: #222;
+                padding: 20px;
+                text-align: center;
+                color: white;
+            }
+
+            /* 
+                responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other 
+            */
+            @media (max-width: 600px) {
+                section {
+                    flex-direction: column;
+                }
+
+                nav ul {
+                    display: flex;
+                }
+
+                nav ul li a {
+                    margin: 0 20px 0 0 ;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        
+        <header>
+            <h2>Cities</h2>
+        </header>
+
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#">london</a></li>
+                    <li><a href="#">paris</a></li>
+                    <li><a href="#">tokyo</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h1>london</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, cupiditate. Officia sint harum, architecto autem quos accusamus excepturi dicta ipsam quod beatae obcaecati saepe quibusdam recusandae, itaque alias magnam asperiores?
+                </p>
+            </article>
+        </section>
+
+        <footer>
+            <p>footer</p>
+        </footer>
+
+    </body>
+</html>

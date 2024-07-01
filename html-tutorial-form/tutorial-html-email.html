@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Dimasqi Ramadhani">
+        <meta name="description" content="Learn HTML Email Form Tutorial">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta http-equiv="refresh" content="30">
+        <title>Tutorial | Email Form HTML</title>
+    </head>
+    <body>
+        <!-- 
+            <input type="email"> is used for input field that should contain an email address.
+
+            Depending on browser support, the email address can be automatically validated when submitted.
+
+            Some smartphones recognize the email type, and add ".com" to the keyboard to match email input.
+        -->
+        <form name="email-form" action="dummy-receive.html" enctype="application/x-www-form-urlencode" method="get" target="_self">
+            <label for="email">
+                email : <br> <input type="email" name="email" id="email" required>
+            </label> <br><br>
+
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>

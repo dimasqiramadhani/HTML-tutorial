@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dimasqi Ramadhani" />
+    <meta name="description" content="Learn HTML Image Tutorial" />
+    <meta name="keywords" content="HTML, CSS, Javascript" />
+    <meta http-equiv="refresh" content="30" />
+    <title>Tutorial | Image HTML</title>
+    <style>
+      /* body {
+                background-image: url(html-image/tutorial-11-image-4.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            } */
+
+      .image2 {
+        width: 300px;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+            <img> element is used to embed an image in a web page, images are not technically inserted into a web page; images are linked to web pages, img element is empty, it contains attributes only, and does not have a closing element
+        -->
+    <img
+      src="Assets/Images/picture-1.jpg"
+      alt="white sand beach"
+      width="300px"
+      height="140px" />
+
+    <!-- Always use style attribute than width or height attribute -->
+    <img
+      class="image1"
+      src="Assets/Images/picture-2.jpg"
+      alt="mountain cold"
+      width="300"
+      height="150" />
+    <img class="image2" src="Assets/Images/picture-3.jpg" alt="sunny lake" />
+
+    <!-- 
+            Commons image formats, which supported in all browsers (chrome, edge, firefox, safari, opera)
+                1. APNG - animated portable network graphics .apng
+                2. GIF - graphics interchange format .gif
+                3. ICO - microsoft icon .ico, .cur
+                4. JPEG - joint photographic expert group image .jpg, .jpeg, .
+                   jfif, .pjpeg, .pjp
+                5. PNG - portable network graphics .png  
+                6. SVG - scalable vector graphics .svg
+        -->
+
+    <!-- 
+            Picture element gives web developers more flexibility in specifying image resources, The <picture> element contains one or more <source> elements, each referring to different images through the srcset attribute. This way the browser can choose the image that best fits the current view and/or device. Each <source> element has a media attribute that defines when the image is the most suitable.
+        -->
+    <picture>
+      <source media="(min-width: 650px)" srcset="Assets/Images/picture-4.jpg" />
+      <source media="(min-width: 465px)" srcset="Assets/Images/picture-5.jpg" />
+      <img src="Assets/Images/picture-6.jpg" />
+    </picture>
+
+    <!-- 
+            <map> and <area> element are used to give user more capability to click an image as a link, for example if the image has a laptop or cup or phone the user can specifically click the item and then will get through to another link, related to item that user has click 
+        -->
+
+    <!-- 
+            <img src="image url" alt="alternate text" usemap="#nameforthemap">
+
+            <map name="usemap">
+                <area shape="rect,circle,poly,default" coords="coordinat of the item of the image" href="url">
+            </map>
+        -->
+  </body>
+</html>

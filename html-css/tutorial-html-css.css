@@ -1,0 +1,16 @@
+/* external style sheet is used to define the style for many HTML pages, to use an external style sheet, add a link to it in the <head> section of each HTML page */
+
+body {
+    background-color: black;
+    color: white;
+}
+
+h1, h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+p, blockquote {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+}

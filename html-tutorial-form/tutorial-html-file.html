@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Dimasqi Ramadhani">
+        <meta name="description" content="Learn HTML File Form Tutorial">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta http-equiv="refresh" content="30">
+        <title>Tutorial | File Form HTML</title>
+    </head>
+    <body>
+        <!-- 
+            <input type="file"> defines a file-select field and a "browse" button for file uploads, and it always send with method POST.
+        -->
+        <form name="file-form" action="dummy-receive.html" enctype="multipart/form-data" method="post" target="_self">
+            <label for="file">
+                masukkan file disini : <input type="file" name="file" id="file">
+            </label> <br><br>
+
+            <input type="submit" value="submit">
+        </form>
+    </body>
+
+</html>

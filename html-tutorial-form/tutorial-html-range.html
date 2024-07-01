@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Dimasqi Ramadhani">
+        <meta name="description" content="Learn HTML Range Form Tutorial">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta http-equiv="refresh" content="30">
+        <title>Tutorial | Range Form HTML</title>
+    </head>
+    <body>
+        <!-- 
+            <input type="range"> defines a control for entering a number whose exact value is not important (like a slider control). 
+            
+            Default range is 0 to 100. however, you can set restrictions on what numbers are accepted with the min, max, and step attributes
+        -->
+        <form name="range-form" action="dummy-receive.html" enctype="application/x-www-form-urlencoded" method="get" target="_self">
+            <label for="range">
+                pilih rentang : <input type="range" name="range" id="range" step="5">
+            </label> <br><br>
+
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>

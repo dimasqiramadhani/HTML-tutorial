@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Dimasqi Ramadhani">
+        <meta name="description" content="Learn HTML Input Form Tutorial">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta http-equiv="refresh" content="30">
+        <title>Tutorial | Input Form HTML</title>
+    </head>
+    <body>
+        <!-- 
+            The html <input> element is the most used form element.
+
+            An <input> element can be displayed in many ways, depending on the type attribute.
+
+            Here are some examples:
+                1. <input type="text">      : displays a single-line text input 
+                                              field.
+                2. <input type="radio">     : displays a radio button (for 
+                                              selecting one of many choices).
+                3. <input type="checkbox">  : displays a checkbox (for selecting 
+                                              zero or more of many choices).
+                4. <input type="submit">    : displays a submit button (for 
+                                              submitting the form).
+                5. <input type="button">    : displays a clickable button.
+        -->
+        <form name="input-form" action="dummy-receive.html" enctype="application/x-www-form-urlencoded" method="get" target="_self">
+            <!-- 
+                Notice that each input field must have a name attribute to be submitted. if the name attribute is omitted, the value of the input field will not be sent at all.
+            -->
+            <input type="text" name="username">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Dimasqi Ramadhani">
+        <meta name="description" content="Learn HTML List Tutorial">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta http-equiv="refresh" content="30">
+        <title>Tutorial | List HTML</title>
+        <style>
+            /* ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333333;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 15px;
+                text-decoration: none;
+            }
+
+            li:hover {
+                background-color: #111111;
+            } */
+        </style>
+    </head>
+    <body>
+        <!-- Unordered list use ul element -->
+        <h1>this is my unordered list</h1>
+        <ul style="list-style-type: square;">
+            <li>coffee</li>
+            <li>tea</li>
+            <li>milk</li>
+        </ul>
+
+        <!-- Ordered list use ol element -->
+        <h1>this is my ordered list</h1>
+        <ol type="1" start="100">
+            <li>coffee
+                <ol>
+                    <li>arabica</li>
+                    <li>robusta</li>
+                </ol>
+            </li>
+            <li>tea
+                <ol>
+                    <li>jasmine tea</li>
+                    <li>lemon tea</li>
+                    <li>green tea</li>
+                    <li>thai tea</li>
+                </ol>
+            </li>
+            
+        </ol>
+
+        <!-- 
+            For the description list use dl element, following with dt and dd element 
+        -->
+        <h1>this is my description list</h1>
+        <dl>
+            <dt>coffee</dt>
+            <dd>black hot drink</dd>
+            <dt>milk</dt>
+            <dd>white cold drink</dd>
+        </dl>
+
+        <!-- Use horizontal list using css for making navigation menu -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </body>
+</html>

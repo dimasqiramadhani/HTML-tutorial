@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Dimasqi Ramadhani">
+        <meta name="description" content="Learn HTML Radio Form Tutorial">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta http-equiv="refresh" content="30">
+        <title>Tutorial | Radio Form HTML</title>
+    </head>
+    <body>
+        <!-- 
+            <input type="radio"> defines a radio button
+
+            Radio button let a user select one of a limited number of choices.
+        -->
+        <form name="radio-form" action="dummy-receive.html" enctype="application/x-www-form-urlencoded" method="get" target="_self">
+            <p>masukkan jenis kelamin</p>
+            <label for="pria">
+                <input type="radio" name="jeniskelamin" id="pria" value="pria"> pria
+            </label>
+            <label for="wanita">
+                <input type="radio" name="jeniskelamin" id="wanita" value="wanita"> wanita
+            </label> <br><br>
+
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>

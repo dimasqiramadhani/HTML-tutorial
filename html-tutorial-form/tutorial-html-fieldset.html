@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Dimasqi Ramadhani">
+        <meta name="description" content="Learn HTML Fieldset Form Tutorial">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta http-equiv="refresh" content="30">
+        <title>Tutorial | Fieldset Form HTML</title>
+    </head>
+    <body>
+        <!-- 
+            <fieldset> element is used to group related data in a form.
+
+            The <legend> element defines a caption for the fieldset tag.
+        -->
+        <form name="fieldset-form" action="dummy-receive.html" enctype="application/x-www-form-urlencoded" method="get" target="_self">
+            <fieldset>
+                <legend>biodata diri</legend>
+                <label for="nama depan">
+                    nama depan : <input type="text" name="nama depan" id="nama depan">
+                </label>
+                <label for="nama belakang">
+                    nama belakang : <input type="text" name="nama belakang" id="nama belakang">
+                </label>
+                <label for="nama">
+                    nama :  <input type="text" name="nama" id="nama">
+                </label> <br>
+                <label for="umur">
+                    umur : <br> <input type="number" name="umur" id="umur">
+                </label> <br>
+                <label for="email">
+                    email : <br> <input type="email" name="email" id="email">
+                </label> <br>
+                <label for="telephone">
+                    telephone : <br> <input type="tel" name="telephone" id="telephone" pattern="(62)[0-9]{5,20}">
+                </label> <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>alamat</legend>
+                <label for="domisili lengkap">domisili :</label> <br>
+                <textarea name="domisili lengkap" id="domisili lengkap" cols="30" rows="10"></textarea> <br>
+                <label for="kode pos">
+                    kode pos : <br> <input type="number" name="kode pos" id="kode pos">
+                </label> <br>
+                <label for="provinsi">provinsi :</label> <br>
+                <select name="provinsi" id="provinsi">
+                    <optgroup label="kalimantan">
+                        <option value="kalimantan timur">kalimantan timur</option>
+                        <option value="kalimantan barat">kalimantan barat</option>
+                        <option value="kalimantan selatas">kalimantan selatan</option>
+                        <option value="kalimantan utara">kalimantan utara</option>
+                        <option value="kalimantan tengah">kalimantan tengah</option>
+                    </optgroup>
+                    <optgroup label="jawa">
+                        <option value="jawa timur">jawa timur</option>
+                        <option value="jawa barat">jawa barat</option>
+                        <option value="jawa tengah">jawa tengah</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+        </form>
+    </body>
+</html>

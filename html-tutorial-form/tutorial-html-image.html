@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dimasqi Ramadhani" />
+    <meta name="description" content="Learn HTML Image Form Tutorial" />
+    <meta name="keywords" content="HTML, CSS, Javascript" />
+    <meta http-equiv="refresh" content="30" />
+    <title>Tutorial | Image Form</title>
+  </head>
+  <body>
+    <!-- 
+        <input type="image"> define an image as a submit button. the path to the image is specified in the src attribute
+    -->
+    <form
+      name="image-form"
+      action="dummy-receive.html"
+      enctype="application/x-www-form-urlencoded"
+      method="get"
+      target="_self">
+      <label for="text">
+        nama : <input type="text" name="text" id="text" />
+      </label>
+      <br /><br />
+
+      <input
+        type="image"
+        src="../Assets/Images/picture-1.jpg"
+        alt="login image" />
+    </form>
+  </body>
+</html>
