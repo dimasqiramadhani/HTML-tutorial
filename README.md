@@ -7,26 +7,31 @@ Repositori ini adalah kumpulan lengkap sumber daya, contoh, dan proyek untuk mem
 ## 📂 Isi Repositori
 
 ### 1. **Pengenalan HTML**
+
 - Dasar-dasar HTML
 - Menyiapkan lingkungan pengembangan
 - Dokumen HTML pertama
 
 ### 2. **Elemen dan Atribut HTML**
+
 - Tag HTML umum
 - Atribut dan penggunaannya
 - Menyusun elemen
 
 ### 3. **Pemformatan Teks dan HTML Semantik**
+
 - Heading, paragraf, dan pemformatan teks
 - Daftar, tautan, dan jangkar
 - Tag HTML5 semantik
 
 ### 4. **Gambar, Multimedia, dan Penyematan**
+
 - Menambahkan gambar ke halaman web
 - Menyematkan video dan audio
 - Menggunakan iframe
 
 ### 5. **Tabel dan Formulir**
+
 - Membuat dan menata tabel
 - Elemen dan atribut formulir
 - Validasi formulir
@@ -36,14 +41,16 @@ Repositori ini adalah kumpulan lengkap sumber daya, contoh, dan proyek untuk mem
 Untuk memulai dengan repositori ini:
 
 1. **Klon repositori:**
-    ```bash
-    git clone https://github.com/dimasqiramadhani/HTML-tutorial.git
-    ```
+
+   ```bash
+   git clone https://github.com/dimasqiramadhani/html-tutorial.git
+   ```
 
 2. **Masuk ke direktori proyek:**
-    ```bash
-    cd HTML-tutorial
-    ```
+
+   ```bash
+   cd html-tutorial
+   ```
 
 3. **Buka file index.html di browser pilihan Anda untuk mulai menjelajahi contoh dan proyek.**
 
