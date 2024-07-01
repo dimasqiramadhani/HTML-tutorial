@@ -43,13 +43,13 @@ Untuk memulai dengan repositori ini:
 1. **Klon repositori:**
 
    ```bash
-   git clone https://github.com/dimasqiramadhani/html-tutorial.git
+   git clone https://github.com/dimasqiramadhani/html-learning-path.git
    ```
 
 2. **Masuk ke direktori proyek:**
 
    ```bash
-   cd html-tutorial
+   cd html-learning-path
    ```
 
 3. **Buka file index.html di browser pilihan Anda untuk mulai menjelajahi contoh dan proyek.**
